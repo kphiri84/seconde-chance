@@ -1,17 +1,7 @@
-/* Utilisation des variables de couleurs */
-:root {
-  --primary-color: #6b4ee6; /* Violet arcade */
-  --secondary-color: #ff3864; /* Rose néon */
-  --accent-color: #5ce1e6; /* Bleu néon */
-  --background-dark: #1a1a2e; /* Fond sombre */
-  --background-light: #202040; /* Fond un peu plus clair */
-  --text-light: #e2e2e2; /* Texte clair */
-  --text-dark: #0f0f0f; /* Texte sombre */
-  --success-color: #38b000; /* Vert pour les succès */
-  --error-color: #ff0054; /* Rouge pour les erreurs */
-  --border-radius: 8px;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  --pixel-border: 4px;
+/* Variables de couleurs définies dans globals.scss */
+.variables {
+  /* Cette classe n'est pas utilisée mais permet d'avoir un sélecteur CSS module valide */
+  color: inherit;
 }
 
 .categoriesPage {
