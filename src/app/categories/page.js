@@ -105,7 +105,7 @@ export default function Categories() {
               <div className={styles.categoryContent}>
                 <h2 className={styles.categoryTitle}>Accessoires</h2>
                 <p className={styles.categoryDescription}>
-                  Tout ce qu'il vous faut pour compléter votre setup et plonger dans l'univers des jeux vidéo rétro.
+                  Tout ce qu&apos;il vous faut pour compléter votre setup et plonger dans l&apos;univers des jeux vidéo rétro.
                 </p>
                 <div className={styles.categoryTags}>
                   <span className={styles.tag}>Manettes</span>

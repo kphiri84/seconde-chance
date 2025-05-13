@@ -23,7 +23,7 @@
 
 html,
 body {
-  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-family: var(--font-press-start-2p), 'Courier New', monospace;
   background-color: var(--background-dark);
   color: var(--text-light);
   line-height: 1.6;

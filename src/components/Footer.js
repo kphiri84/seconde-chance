@@ -122,7 +122,7 @@ const Footer = () => {
                     required
                   />
                   <button type="submit" className={styles.newsletterButton}>
-                    S'inscrire
+                    S&apos;inscrire
                   </button>
                 </form>
               </div>

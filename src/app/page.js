@@ -61,7 +61,7 @@ export default function Home() {
               </div>
               <h3 className={styles.categoryTitle}>Accessoires</h3>
               <p className={styles.categoryDescription}>
-                Tout ce qu'il vous faut pour compléter votre setup et plonger dans l'univers des jeux vidéo rétro.
+                Tout ce qu&apos;il vous faut pour compléter votre setup et plonger dans l&apos;univers des jeux vidéo rétro.
               </p>
               <span className={styles.categoryLink}>Découvrir</span>
             </Link>
@@ -204,9 +204,9 @@ export default function Home() {
               <div className={styles.featureIcon}>
                 <FaComments />
               </div>
-              <h3 className={styles.featureTitle}>Service client à l'écoute</h3>
+              <h3 className={styles.featureTitle}>Service client à l&apos;écoute</h3>
               <p className={styles.featureDescription}>
-                Vous avez des questions ? N'hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.
+                Vous avez des questions ? N&apos;hésitez pas à nous contacter, nous répondons rapidement et avec plaisir.
               </p>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function Home() {
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialContent}>
                 <p className={styles.testimonialText}>
-                  "J'ai acheté une Super Nintendo en excellent état. L'emballage était soigné et la console fonctionne parfaitement. Je recommande vivement cette boutique pour tous les amateurs de retro gaming !"
+                  &quot;J&apos;ai acheté une Super Nintendo en excellent état. L&apos;emballage était soigné et la console fonctionne parfaitement. Je recommande vivement cette boutique pour tous les amateurs de retro gaming !&quot;
                 </p>
                 <div className={styles.testimonialRating}>★★★★★</div>
               </div>
@@ -250,7 +250,7 @@ export default function Home() {
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Prêt à redécouvrir vos jeux préférés ?</h2>
             <p className={styles.ctaText}>
-              Faites un tour dans notre boutique, trouvez vos prochaines pépites et vivez l'expérience rétro comme jamais auparavant !
+              Faites un tour dans notre boutique, trouvez vos prochaines pépites et vivez l&apos;expérience rétro comme jamais auparavant !
             </p>
             <Link href="/produits" className={styles.ctaButton}>
               Explorer la boutique
