@@ -1,0 +1,158 @@
+/* Variables de couleurs inspirées des jeux vidéo rétro */
+:root {
+  --primary-color: #6b4ee6; /* Violet arcade */
+  --secondary-color: #ff3864; /* Rose néon */
+  --accent-color: #5ce1e6; /* Bleu néon */
+  --background-dark: #1a1a2e; /* Fond sombre */
+  --background-light: #202040; /* Fond un peu plus clair */
+  --text-light: #e2e2e2; /* Texte clair */
+  --text-dark: #0f0f0f; /* Texte sombre */
+  --success-color: #38b000; /* Vert pour les succès */
+  --error-color: #ff0054; /* Rouge pour les erreurs */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --pixel-border: 4px;
+}
+
+/* Reset et styles de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 8px var(--accent-color);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+button, .button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+  }
+  
+  &:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+    
+    &:before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Classes utilitaires */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pixel-border {
+  border: var(--pixel-border) solid var(--primary-color);
+  box-shadow: 
+    var(--pixel-border) var(--pixel-border) 0 0 var(--secondary-color),
+    calc(var(--pixel-border) * 2) calc(var(--pixel-border) * 2) 0 0 var(--accent-color);
+}
+
+.neon-text {
+  color: var(--accent-color);
+  text-shadow: 
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Animation de clignotement pour effets néon */
+@keyframes blink {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.5;
+  }
+}
+
+.blink {
+  animation: blink 5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  button, .button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

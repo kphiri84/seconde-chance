@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seconde Chance - Boutique de Jeux Vidéo Rétro
 
-## Getting Started
+Seconde Chance est une boutique e-commerce spécialisée dans les jeux vidéo et consoles rétro, développée avec Next.js et JavaScript. Le design est inspiré de l'univers des jeux vidéo rétro avec une palette de couleurs néon et un style pixelisé.
 
-First, run the development server:
+## Description
+
+Seconde Chance propose une sélection de jeux vidéo et de consoles rétro soigneusement choisis, allant des classiques intemporels aux dernières pépites. Que vous soyez un collectionneur passionné ou un amateur de rétro-gaming, vous trouverez ici des articles de qualité pour satisfaire toutes vos envies de gaming !
+
+### Catégories de produits
+
+- **Jeux vidéo rétro** : Des titres emblématiques pour vos consoles vintage telles que la Super Nintendo, Mega Drive, PlayStation 1, etc.
+- **Consoles rétro et modernes** : Une gamme de consoles, du Game Boy au PS4 en passant par la Nintendo 64 et autres.
+- **Accessoires et objets de collection** : Tout ce qu'il vous faut pour compléter votre setup et plonger dans l'univers des jeux vidéo rétro.
+
+## Fonctionnalités
+
+- Design inspiré des jeux vidéo rétro avec effets néon
+- Navigation intuitive par catégories
+- Filtrage et tri des produits
+- Système de recherche
+- Panier d'achat
+- Système d'authentification
+- Responsive design pour tous les appareils
+
+## Technologies utilisées
+
+- **Frontend** : Next.js, React, JavaScript, SASS
+- **Styles** : SCSS Modules
+- **Icônes** : React Icons
+- **Images** : Next.js Image Optimization
+- **Animation** : Framer Motion
+- **Paiement** : Stripe (préparé pour l'intégration)
+- **Authentification** : NextAuth.js
+
+## Démarrage
+
+Pour lancer le serveur de développement :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Structure des pages (App Router)
+│   ├── (shop)/             # Layout partagé pour les pages de la boutique
+│   ├── api/                # Routes API
+│   ├── auth/               # Pages d'authentification
+│   ├── categories/         # Pages des catégories
+│   ├── produits/           # Page des produits
+│   ├── panier/             # Page du panier
+│   ├── compte/             # Page du compte utilisateur
+│   ├── a-propos/           # Page À propos
+│   ├── contact/            # Page de contact
+│   ├── globals.css         # Styles globaux CSS
+│   └── layout.js           # Layout principal
+├── components/             # Composants réutilisables
+├── lib/                    # Utilitaires et fonctions
+└── styles/                 # Styles SCSS globaux
+```
 
-## Learn More
+## Déploiement
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce projet peut être facilement déployé sur Vercel ou toute autre plateforme supportant Next.js.
